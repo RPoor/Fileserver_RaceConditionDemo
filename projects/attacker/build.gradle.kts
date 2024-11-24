@@ -1,36 +1,27 @@
 plugins {
     java
+    application
     alias(libs.plugins.lombok)
-    alias(libs.plugins.jlink)
-    alias(libs.plugins.modules)
 }
 
 application {
-    mainClass = "attacker.Main"
-    mainModule = "attacker"
+    mainClass = "bit.attacker.Main"
 }
 
 tasks.jar {
     manifest {
         attributes(
-            "Implementation-Title" to "attacker",
-            "Main-Class" to "attacker.Main"
+            "Main-Class" to "bit.attacker.Main"
             )
     }
 }
 
+tasks.named<JavaExec>("run") {
+    workingDir = rootProject.projectDir
+}
 
-
-jlink {
-    launcher {
-        name = "attacker"
-    }
-    jpackage {
-        val os = org.gradle.internal.os.OperatingSystem.current()
-        if (os.isWindows) {
-            imageOptions.add("--win-console")
-        }
-    }
+tasks.build {
+    dependsOn("installDist")
 }
 
 repositories {
@@ -41,4 +32,6 @@ dependencies {
     compileOnly(libs.jetbrains.annotations)
     implementation(libs.picocli)
     implementation(libs.apache.httpclient)
+    implementation(libs.slf4j.api)
+    implementation(libs.slf4j.simple)
 }

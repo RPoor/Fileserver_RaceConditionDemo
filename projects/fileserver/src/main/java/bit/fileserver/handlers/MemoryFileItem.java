@@ -1,4 +1,4 @@
-package fileserver.handlers;
+package bit.fileserver.handlers;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

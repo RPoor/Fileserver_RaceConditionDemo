@@ -1,7 +1,7 @@
 #!/bin/sh
-if [ -e ./build/fileserver/bin/fileserver ]
+if [ -e ./projects/fileserver/build/install ]
 then
-  ./build/fileserver/bin/fileserver $@
+  ./projects/fileserver/build/install/fileserver/bin/fileserver $@
 else
   echo "Run ./gradlew build first!"
   exit 1

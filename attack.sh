@@ -1,7 +1,7 @@
 #!/bin/sh
-if [ -e ./build/attacker/bin/attacker ]
+if [ -e ./projects/attacker/build/install ]
 then
-  ./build/attacker/bin/attacker $@
+  ./projects/attacker/build/install/attacker/bin/attacker $@
 else
   echo "Run ./gradlew build first!"
   exit 1

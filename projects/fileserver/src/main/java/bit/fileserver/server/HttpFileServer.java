@@ -1,15 +1,15 @@
-package fileserver.server;
+package bit.fileserver.server;
 
 import com.sun.net.httpserver.HttpServer;
 import lombok.val;
 import org.jetbrains.annotations.NotNull;
-import fileserver.handlers.DownloadHandler;
-import fileserver.handlers.MainPageHandler;
-import fileserver.handlers.UploadHandler;
-import fileserver.io.BlockingIOWorker;
-import fileserver.io.IOWorker;
-import fileserver.io.NaiveIOWorker;
-import fileserver.io.NonBlockingIOWorker;
+import bit.fileserver.handlers.DownloadHandler;
+import bit.fileserver.handlers.MainPageHandler;
+import bit.fileserver.handlers.UploadHandler;
+import bit.fileserver.io.BlockingIOWorker;
+import bit.fileserver.io.IOWorker;
+import bit.fileserver.io.NaiveIOWorker;
+import bit.fileserver.io.NonBlockingIOWorker;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

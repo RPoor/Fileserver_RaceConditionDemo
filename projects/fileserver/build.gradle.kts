@@ -1,20 +1,17 @@
 plugins {
     java
+    application
     alias(libs.plugins.lombok)
-    alias(libs.plugins.jlink)
-    alias(libs.plugins.modules)
 }
 
 application {
-    mainClass = "fileserver.Main"
-    mainModule = "fileserver"
+    mainClass = "bit.fileserver.Main"
 }
 
 tasks.jar {
     manifest {
         attributes(
-            "Implementation-Title" to "fileserver",
-            "Main-Class" to "fileserver.Main"
+            "Main-Class" to "bit.fileserver.Main"
             )
     }
 }
@@ -23,16 +20,8 @@ tasks.named<JavaExec>("run") {
     workingDir = rootProject.projectDir
 }
 
-jlink {
-    launcher {
-        name = "fileserver"
-    }
-    jpackage {
-        val os = org.gradle.internal.os.OperatingSystem.current()
-        if (os.isWindows) {
-            imageOptions.add("--win-console")
-        }
-    }
+tasks.build {
+    dependsOn("installDist")
 }
 
 repositories {

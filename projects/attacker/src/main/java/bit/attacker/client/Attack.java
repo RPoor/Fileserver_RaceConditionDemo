@@ -1,4 +1,4 @@
-package attacker.client;
+package bit.attacker.client;
 
 import lombok.Cleanup;
 import lombok.val;
@@ -29,7 +29,7 @@ public class Attack {
                     val post = new HttpPost(target);
                     post.setEntity(entity);
                     client.execute(post, response -> {
-                        System.out.println(new String(response.getEntity().getContent().readAllBytes()));
+                        System.out.printf("Response: %s\n", new String(response.getEntity().getContent().readAllBytes()));
                         return null;
                     });
                 } catch (Exception e) {

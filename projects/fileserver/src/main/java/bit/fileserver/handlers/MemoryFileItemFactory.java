@@ -1,4 +1,4 @@
-package fileserver.handlers;
+package bit.fileserver.handlers;
 
 import lombok.val;
 import org.apache.commons.fileupload2.core.FileItemFactory;

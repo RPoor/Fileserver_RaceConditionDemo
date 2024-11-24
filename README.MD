@@ -3,8 +3,8 @@
 Dependencies:
 - Java 21 in PATH
 
-Run `./gradlew build` to compile both the file server and the attacker files. The binaries will be put inside `./build`.
-After this, you can launch the file server using the `./server.sh` script and the attacker using `./attack.sh`
+Run `./gradlew build` to compile both the file server and the attacker files. The binaries will be put inside `./projects/fileserver/build/distributions` and `./projects/attacker/build/distributions`, respectively.
+After this, you can launch the file server using the `./server.sh` script and the attacker using `./attack.sh`.
 
 # Project structure
 

@@ -1,11 +1,11 @@
-package attacker.client;
+package bit.attacker.client;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
 import java.util.concurrent.Callable;
 
-@Command(name = "launch",
+@Command(name = "attack.sh",
          mixinStandardHelpOptions = true,
          description = "Runs the attack program")
 public class Launch implements Callable<Integer> {

@@ -1,4 +1,4 @@
-package fileserver.io;
+package bit.fileserver.io;
 
 import lombok.Cleanup;
 import lombok.val;

@@ -1,4 +1,4 @@
-package fileserver.io;
+package bit.fileserver.io;
 
 import lombok.val;
 import org.jetbrains.annotations.NotNull;

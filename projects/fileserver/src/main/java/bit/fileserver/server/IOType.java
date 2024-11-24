@@ -1,4 +1,4 @@
-package fileserver.server;
+package bit.fileserver.server;
 
 public enum IOType {
     Naive,

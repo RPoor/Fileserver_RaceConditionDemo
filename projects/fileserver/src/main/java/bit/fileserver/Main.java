@@ -1,7 +1,7 @@
-package fileserver;
+package bit.fileserver;
 
 import picocli.CommandLine;
-import fileserver.server.Launch;
+import bit.fileserver.server.Launch;
 
 public class Main {
     public static void main(String[] args) {

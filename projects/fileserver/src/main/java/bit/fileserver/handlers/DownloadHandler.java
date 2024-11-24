@@ -1,4 +1,4 @@
-package fileserver.handlers;
+package bit.fileserver.handlers;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
@@ -6,7 +6,7 @@ import dev.mccue.jdk.httpserver.Body;
 import dev.mccue.jdk.httpserver.HttpExchangeUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
-import fileserver.io.IOWorker;
+import bit.fileserver.io.IOWorker;
 
 import java.io.IOException;
 import java.util.HashMap;

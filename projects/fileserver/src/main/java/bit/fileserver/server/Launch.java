@@ -1,4 +1,4 @@
-package fileserver.server;
+package bit.fileserver.server;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -6,7 +6,7 @@ import picocli.CommandLine.Option;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Callable;
 
-@Command(name = "launch",
+@Command(name = "server.sh",
          mixinStandardHelpOptions = true,
          description = "Runs the file server")
 public class Launch implements Callable<Integer> {

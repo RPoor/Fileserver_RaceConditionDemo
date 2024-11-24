@@ -1,7 +1,7 @@
-package attacker;
+package bit.attacker;
 
 import picocli.CommandLine;
-import attacker.client.Launch;
+import bit.attacker.client.Launch;
 
 import java.io.IOException;
 

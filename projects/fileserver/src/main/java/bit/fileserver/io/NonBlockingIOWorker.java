@@ -1,4 +1,4 @@
-package fileserver.io;
+package bit.fileserver.io;
 
 import lombok.val;
 import org.jetbrains.annotations.NotNull;
@@ -6,11 +6,7 @@ import org.jetbrains.annotations.NotNull;
 import java.io.IOException;
 import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
-import java.nio.file.OpenOption;
-import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
-import java.security.SecureRandom;
-import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class NonBlockingIOWorker extends NaiveIOWorker {
