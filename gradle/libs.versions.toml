@@ -1,0 +1,10 @@
+[libraries]
+jetbrains-annotations = { group = "org.jetbrains", name = "annotations", version = "26.0.1" }
+picocli = { group = "info.picocli", name = "picocli", version = "4.7.6" }
+fileupload = { group = "dev.mccue", name = "jdk-httpserver-fileupload", version = "2024.08.18" }
+apache-httpclient = { group = "org.apache.httpcomponents.client5", name = "httpclient5", version = "5.4.1" }
+
+[plugins]
+lombok = { id = "io.freefair.lombok", version = "8.11" }
+jlink = { id = "org.beryx.jlink", version = "3.1.1" }
+modules = { id = "org.javamodularity.moduleplugin", version = "1.8.15" }
